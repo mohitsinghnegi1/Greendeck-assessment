@@ -1,0 +1,42 @@
+/* home.css */
+.profile-img {
+  height: 200px;
+}
+.mask_container {
+  background-image: url('../img/dashboard_banner.jpg');
+  background-image: linear-gradient(90deg, rgba(7, 7, 7, 0.788), #181d1ac2),
+    url('../img/dashboard_banner.jpg');
+  height: 260px;
+}
+body {
+  background-color: #f9fafb !important;
+}
+.bolder-text {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  /* opacity: 0.7; */
+  color: rgb(207, 145, 28);
+}
+
+.normal-text {
+  font-size: 20px;
+  font-weight: 500;
+  /* opacity: 0.7; */
+  color: #fff;
+}
+.add-meal {
+  width: 250px;
+  width: fit-content;
+  background: #fff;
+  border: 1px solid #27ad36;
+  border-radius: 20px;
+  opacity: 1;
+  text-align: left;
+  font: Bold 16px/22px Source Sans Pro;
+  letter-spacing: -0.16px;
+  color: #27ad36;
+  opacity: 1;
+  transition: all 0.6s;
+  padding: 6px 20px;
+}

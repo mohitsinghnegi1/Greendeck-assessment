@@ -1,0 +1,114 @@
+.main-container {
+  margin-top: 18%;
+}
+.main-container2 {
+  margin-top: 10%;
+}
+.container::before {
+  content: '';
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+#custom-search-input {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+
+#custom-search-input .search-query {
+  padding-right: 13px;
+  padding-right: 4px \9;
+  padding-left: 13px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 6px;
+  height: 60px;
+  border: 6px solid #ececec;
+  font-size: 20px;
+  color: #042337;
+  font-family: MyriadPro-Regular_0;
+}
+
+#custom-search-input button {
+  border: 0;
+  background: none;
+  /** belows styles are working good */
+  padding: 2px 5px;
+  margin-top: 2px;
+  position: relative;
+  left: -28px;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #ff7f7f;
+  font-size: 20px;
+}
+
+.search-query:focus + button {
+  z-index: 3;
+}
+
+#custom-search-input .input-group-btn {
+  position: absolute;
+  font-size: 0;
+  white-space: nowrap;
+  right: 20px;
+  top: 15px;
+  z-index: 1000;
+}
+
+.form-control::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+}
+
+.button-checkbox {
+  margin: 0 0 15px 0;
+  display: block;
+}
+
+/*** serach page ***/
+
+.search-header {
+  float: left;
+  width: 100%;
+  background: #f5f5f5;
+  padding: 30px 0 50px;
+}
+
+/**---- Media ----**/
+
+@media screen and (max-width: 1400px) {
+  .main-container {
+    margin-top: 8%;
+  }
+  .main-container2 {
+    margin-top: 4%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .search-header #custom-search-input {
+    float: left;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search-header #custom-search-input {
+    float: left;
+    width: 100%;
+  }
+}
