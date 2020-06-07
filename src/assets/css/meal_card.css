@@ -1,0 +1,46 @@
+.btn.btn-primary {
+  background: #fff;
+  border: 1px solid #27ad36;
+  border-radius: 20px;
+  opacity: 1;
+  text-align: left;
+  font: Bold 16px/22px Source Sans Pro;
+  letter-spacing: -0.16px;
+  color: #27ad36;
+  opacity: 1;
+  transition: all 0.6s;
+}
+.btn.btn-primary:hover {
+  background: #27ad36 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  opacity: 1;
+  text-align: left;
+  font: Bold 16px/22px Source Sans Pro;
+  letter-spacing: -0.16px;
+  color: #ffffff;
+  opacity: 1;
+}
+.card {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #dfe3e8;
+  border-radius: 8px;
+  opacity: 1;
+  text-align: center;
+  font: Regular 18px/25px Source Sans Pro;
+  letter-spacing: -0.18px;
+  color: #454f5b;
+  opacity: 1;
+  transition: all 0.6s;
+}
+.card:hover {
+  background: #f4fff5 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 10px #3663ad33;
+  border: 1px solid #27ad36;
+  border-radius: 8px;
+  opacity: 1;
+  text-align: center;
+  /* font: Bold 18px/25px Source Sans Pro; */
+  letter-spacing: -0.18px;
+  color: #27ad36;
+  opacity: 1;
+}

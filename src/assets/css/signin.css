@@ -1,0 +1,588 @@
+/* sighin.css */
+.error {
+  color: red;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+/*---------------------------------------------*/
+a {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #333333;
+}
+
+/*---------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+}
+
+ul,
+li {
+  margin: 0px;
+  list-style-type: none;
+}
+
+/*---------------------------------------------*/
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus,
+input:focus {
+  border-color: #27ad36 !important;
+}
+
+input::-webkit-input-placeholder {
+  color: #999999;
+}
+input:-moz-placeholder {
+  color: #999999;
+}
+input::-moz-placeholder {
+  color: #999999;
+}
+input:-ms-input-placeholder {
+  color: #999999;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+textarea:-moz-placeholder {
+  color: #999999;
+}
+textarea::-moz-placeholder {
+  color: #999999;
+}
+textarea:-ms-input-placeholder {
+  color: #999999;
+}
+
+/*---------------------------------------------*/
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+iframe {
+  border: none !important;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ utility ]*/
+
+/*==================================================================
+[ Text ]*/
+.txt1 {
+  /* color: #999999; */
+  font: Regular 12px/17px Source Sans Pro;
+  letter-spacing: -0.12px;
+  font-size: 14px;
+  color: #454f5b;
+  opacity: 0.7;
+}
+
+.txt2 {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #21912d;
+  text-decoration: none !important;
+}
+a.txt2:hover {
+  color: #0baf50;
+}
+
+.txt3 {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #21912d;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/*==================================================================
+[ Size ]*/
+.size1 {
+  width: 355px;
+  max-width: 100%;
+}
+
+.size2 {
+  width: calc(100% - 43px);
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]*/
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-login100 {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #f2f2f2;
+}
+
+.wrap-login100 {
+  width: 1170px;
+  background: #fff;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+
+  flex-direction: row-reverse;
+}
+
+/*==================================================================
+[ login more ]*/
+.login100-more {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.login100-more::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/*==================================================================
+[ Form ]*/
+
+.login100-form {
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 160px 65px 40px 65px;
+  height: 400px;
+  height: fit-content !important;
+  margin: auto;
+}
+
+.login100-form-title {
+  color: #555555;
+
+  text-transform: capitalize;
+
+  text-align: center;
+
+  width: 100%;
+  display: block;
+  font: Bold 36px/58px Source Sans Pro;
+  letter-spacing: -0.36px;
+  color: #454f5b;
+}
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+}
+
+.rs1-wrap-input100,
+.rs2-wrap-input100 {
+  width: 100%;
+}
+
+.input100 {
+  display: block;
+  width: 100%;
+  background: transparent;
+
+  font-size: 18px;
+  color: #666666;
+  line-height: 1.2;
+  padding: 0 25px;
+}
+
+input.input100 {
+  height: 55px;
+}
+
+/*---------------------------------------------*/
+
+.focus-input100 {
+  position: absolute;
+  display: block;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  top: -1px;
+  left: -1px;
+  pointer-events: none;
+  border: 1px solid #21912d;
+  border-radius: 20px;
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  -webkit-transform: scaleX(1.1) scaleY(1.3);
+  -moz-transform: scaleX(1.1) scaleY(1.3);
+  -ms-transform: scaleX(1.1) scaleY(1.3);
+  -o-transform: scaleX(1.1) scaleY(1.3);
+  transform: scaleX(1.1) scaleY(1.3);
+}
+
+.input100:focus + .focus-input100 {
+  visibility: visible;
+  opacity: 1;
+  border-radius: 20px;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-login100-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.login100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  border-radius: 3px;
+  background: #f7fff8 0% 0% no-repeat padding-box;
+  border: 1px solid #27ad36;
+  border-radius: 20px;
+  font: Bold 16px/22px Source Sans Pro;
+  letter-spacing: -0.16px;
+  color: #27ad36;
+}
+
+.login100-form-btn:hover {
+  border: 1px solid #21912d;
+  border-radius: 20px;
+}
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 992px) {
+  .login100-form {
+    width: 60%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .login100-more {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .login100-form {
+    width: 100%;
+  }
+
+  .login100-more {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .login100-form {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 150px;
+  }
+
+  .rs1-wrap-input100,
+  .rs2-wrap-input100 {
+    width: 100%;
+  }
+
+  .rs2-wrap-input100 {
+    border-left: 1px solid #e6e6e6;
+  }
+}
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: #fff;
+  border: 1px solid #c80000;
+  border-radius: 2px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 12px;
+  pointer-events: none;
+
+  color: #c80000;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+  content: '\f12a';
+
+  display: block;
+  position: absolute;
+  color: #c80000;
+  font-size: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 18px;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.vh-100 {
+  height: 100vh;
+}
+.vw-100 {
+  width: 100vw;
+}
+.login100-form {
+  display: flex;
+  flex-direction: column;
+}
+.firebaseui-idp-text {
+  color: #fff;
+  padding-left: 0px;
+  display: none;
+  /* padding-left: 16px; */
+  text-transform: none;
+  vertical-align: middle;
+}
+.firebaseui-idp-text.firebaseui-idp-text-long {
+  display: none !important;
+}
+.firebaseui-idp-button {
+  max-width: 40px !important;
+  min-height: 40px !important;
+  padding: 8px 8px;
+
+  width: 100%;
+}
+.mdl-button {
+  min-width: unset !important;
+}
+.firebaseui-idp-button {
+  width: auto !important;
+  border-radius: 50% !important;
+  min-height: 50px !important;
+  min-width: 50px !important;
+}
+.firebaseui-idp-list > .firebaseui-list-item {
+  width: 50px !important;
+  width: fit-content !important;
+}
+.firebaseui-idp-list {
+  display: flex !important;
+  justify-content: space-around !important;
+}
+.sep {
+  display: flex;
+  flex-direction: row;
+}
+
+.sep:before,
+.sep:after {
+  content: '';
+  flex: 1 1;
+
+  border-bottom: 1px solid #21912d;
+  margin: auto;
+}
+.back {
+  background-image: url('../img/meeting.jpg');
+
+  background-image: linear-gradient(90deg, rgba(13, 14, 13, 0.651), #181d1a79),
+    url('../img//meeting.jpg');
+  background-size: cover;
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+.login100-more::before {
+  background-color: unset;
+}
+.cur-pointer {
+  cursor: pointer;
+}
+.welcome-text {
+  font: Bold 59px/84px Source Sans Pro;
+  letter-spacing: 0.59px;
+  color: #27ad36;
+  line-height: 1.1;
+  margin-bottom: 14px;
+  width: 86%;
+}
+.wel-description {
+  color: #fff;
+
+  font: Regular 18px/25px Source Sans Pro;
+  letter-spacing: 0.98px;
+}
+.logo {
+  position: absolute;
+  margin-top: 20px;
+  z-index: 2;
+  padding-left: 10px;
+  font-weight: 600;
+}
+.logo img {
+  height: 30px !important;
+  margin-right: 10px;
+}
+input:-internal-autofill-selected {
+  background-color: #fff !important;
+}
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+  -webkit-text-fill-color: #454f5b !important;
+  font: Regular 15px/21px Source Sans Pro;
+  letter-spacing: -0.15px;
+  color: #454f5b;
+}
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
+  border-radius: 20px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+}

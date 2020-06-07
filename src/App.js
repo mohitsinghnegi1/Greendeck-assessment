@@ -1,16 +1,33 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
+import { BrowserRouter } from 'react-router-dom';
+
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
-function App() {
+import { StoreContext, StoreProvider } from './components/context/Store';
+import Home from './components/homepage/Home';
+
+function Route() {
+  const [store, setStore] = useContext(StoreContext);
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <React.Fragment>
+      <Home />
+    </React.Fragment>
+  );
+}
+
+function App(props) {
+  const value = useContext(StoreContext);
+  console.log(value);
+  return (
+    <BrowserRouter>
+      <StoreProvider>
+        <div className='App  '>
+          <Route />
+        </div>
+      </StoreProvider>
+    </BrowserRouter>
   );
 }
 
