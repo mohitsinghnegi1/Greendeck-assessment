@@ -14,7 +14,7 @@
     "react-scripts": "3.4.1",
     "bootstrap": "^4.4.1",
     "font-awesome": "^4.7.0",
-    "node-sass": "^4.14.0",
+    "node-sass": "^7.0.0",
     "react-bootstrap": "^1.0.1",
     "react-model": "^3.1.0",
     "react-router-dom": "^5.2.0",
